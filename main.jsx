@@ -1,4 +1,8 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+
 // Code goes here
+/*
 class Comment extends React.Component {
   render() {
 	return (
@@ -9,6 +13,7 @@ class Comment extends React.Component {
 	  </div>);
   }
 }
+*/
 
 class CommentBox extends React.Component {
 	render() {
@@ -29,11 +34,9 @@ class CommentBox extends React.Component {
 		return (<section><h1> Fuck Yeah! </h1>
 			<div>Hello From react: {time.toTimeString()}</div>
 			<p className='stupeed'>Some bla bla </p>
-			<br>
-				<Comment />
+			<br />
 				{this._getComments(frameWorks)}
-		</section>
-	);
+		</section>);
 	}
 	
 	_getComments(frameWorks) {
@@ -41,11 +44,8 @@ class CommentBox extends React.Component {
 		<div className='inline'>OJ</div>
 		))
 	}
-	}
 	
-	
-	
-	
-	
-	let target =  document.getElementById("rapp");
-	ReactDOM.render(<CommentBox />, target);
+}
+
+
+ReactDOM.render(<CommentBox />, document.getElementById("rapp"));
