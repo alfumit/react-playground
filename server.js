@@ -6,7 +6,7 @@ const Router = require('koa-router');
 const router = new Router();
 const serve = require('koa-static');
 
-app.use(serve('./'))
+app.use(serve('./'));
 
 
 app.use(router.routes());
